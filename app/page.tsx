@@ -4,8 +4,7 @@ import { Coffee, Clock, Gift, Star, ArrowRight, Menu, Play } from "lucide-react"
 export default function Home() {
   return (
     <div className="container">
-      {/* Header */}
-      <header className="header">
+      <div className="header">
         <div className="header-container">
           <div className="header-content">
             <div className="logo-container">
@@ -16,8 +15,7 @@ export default function Home() {
               <span className="logo-text">BrewPass</span>
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="desktop-nav">
+            <div className="desktop-nav">
               <a href="#" className="nav-link">
                 Cafés
               </a>
@@ -28,69 +26,60 @@ export default function Home() {
                 Support
               </a>
               <button className="download-button">Download App</button>
-            </nav>
+            </div>
 
-            {/* Mobile Menu Button */}
             <button className="mobile-menu-button">
               <Menu className="icon" />
             </button>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* Hero Section */}
-      <section className="hero-section">
+      <div className="hero-section">
         <div className="hero-background"></div>
         <div className="hero-container">
           <div className="hero-content">
-            {/* Left Content */}
             <div className="hero-text">
               <div className="hero-badge">
                 <span className="badge-dot"></span>
                 Now available in 50+ cities
               </div>
 
-              <h1 className="hero-title">
+              <h2 className="hero-title">
                 Your coffee, <span className="highlight">delivered</span> in minutes
-              </h1>
+              </h2>
 
-              <p className="hero-description">
+              <div className="hero-description">
                 Skip the lines, earn rewards, and enjoy perfectly crafted coffee from your favorite
                 local cafés. The future of coffee ordering is here.
-              </p>
+              </div>
 
               <div className="hero-buttons">
                 <button className="primary-button">
                   Get Started Now
                   <ArrowRight className="button-icon" />
                 </button>
-                <button className="secondary-button">
+                <a className="secondary-button">
                   <Play className="button-icon-left" />
                   Watch Demo
-                </button>
+                </a>
               </div>
             </div>
 
-            {/* Right Content - Phone Image */}
             <div className="hero-image-container">
               <div className="phone-wrapper">
-                {/* Floating elements */}
                 <div className="floating-bubble purple"></div>
                 <div className="floating-bubble green"></div>
                 <div className="floating-bubble orange"></div>
 
-                {/* Phone Image */}
-                <div className="phone-image">
-                  <img src="/img/phone.png" alt="BrewPass Mobile App" />
-                </div>
+                <div className="phone-image"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Stats Section */}
-      <section className="stats-section">
+      <div className="stats-section">
         <div className="stats-container">
           <div className="stats-grid">
             <div className="stat-item">
@@ -107,15 +96,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Features Section */}
       <section className="features-section">
         <div className="features-container">
           <div className="features-header">
-            <h2 className="features-title">
+            <h1 className="features-title">
               Why choose <span className="highlight">BrewPass</span>
-            </h2>
+            </h1>
             <p className="features-description">
               {
                 "We're revolutionizing how you experience coffee with cutting-edge technology and seamless user experience."
@@ -129,7 +117,7 @@ export default function Home() {
                 <div className="feature-icon orange">
                   <Clock className="icon" />
                 </div>
-                <h3 className="feature-title">Skip the Queue</h3>
+                <h2 className="feature-title">Skip the Queue</h2>
                 <p className="feature-description">
                   Order ahead and collect your coffee without waiting. Perfect for busy mornings.
                 </p>
@@ -141,7 +129,7 @@ export default function Home() {
                 <div className="feature-icon purple">
                   <Star className="icon" />
                 </div>
-                <h3 className="feature-title">Loyalty Rewards</h3>
+                <h2 className="feature-title">Loyalty Rewards</h2>
                 <p className="feature-description">
                   Earn points with every purchase and unlock exclusive drinks and discounts.
                 </p>
@@ -153,7 +141,7 @@ export default function Home() {
                 <div className="feature-icon green">
                   <Gift className="icon" />
                 </div>
-                <h3 className="feature-title">Send Coffee</h3>
+                <h2 className="feature-title">Send Coffee</h2>
                 <p className="feature-description">
                   Surprise friends and colleagues with their favorite drinks delivered instantly.
                 </p>
@@ -163,11 +151,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="cta-section">
         <div className="cta-overlay"></div>
         <div className="cta-container">
-          <h2 className="cta-title">Ready to transform your coffee experience?</h2>
+          <h1 className="cta-title">Ready to transform your coffee experience?</h1>
           <p className="cta-description">
             {
               "Join thousands of coffee lovers who've already made the switch to smarter coffee ordering."
@@ -186,8 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
+      <div className="footer">
         <div className="footer-container">
           <div className="footer-content">
             <div className="footer-logo">
@@ -196,23 +182,12 @@ export default function Home() {
               </div>
               <span className="footer-logo-text">BrewPass</span>
             </div>
-            <div className="footer-links">
-              <a href="#" className="footer-link">
-                Privacy
-              </a>
-              <a href="#" className="footer-link">
-                Terms
-              </a>
-              <a href="#" className="footer-link">
-                Support
-              </a>
-            </div>
           </div>
           <div className="footer-bottom">
             <p>&copy; 2025 BrewPass. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
