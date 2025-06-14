@@ -1,193 +1,202 @@
-import React from "react";
-import { Coffee, Clock, Gift, Star, ArrowRight, Menu, Play } from "lucide-react";
-
 export default function Home() {
   return (
-    <div className="container">
-      <div className="header">
-        <div className="header-container">
-          <div className="header-content">
-            <div className="logo-container">
-              <div className="logo-icon">
-                <Coffee className="icon" />
-                <div className="status-dot"></div>
-              </div>
-              <span className="logo-text">BrewPass</span>
-            </div>
-
-            <div className="desktop-nav">
-              <a href="#" className="nav-link">
-                Cafés
-              </a>
-              <a href="#" className="nav-link">
-                How it Works
-              </a>
-              <a href="#" className="nav-link">
-                Support
-              </a>
-              <button className="download-button">Download App</button>
-            </div>
-
-            <button className="mobile-menu-button">
-              <Menu className="icon" />
-            </button>
+    <div className="pet-pharmacy">
+      {/* Header */}
+      <header className="header">
+        <nav className="nav">
+          <div className="logo">
+            <h2>PetCare+</h2>
           </div>
-        </div>
-      </div>
+          <ul className="nav-menu">
+            <li>
+              <a href="#services">Услуги</a>
+            </li>
+            <li>
+              <a href="#about">О нас</a>
+            </li>
+            <li>
+              <a href="#contact">Контакты</a>
+            </li>
+            <li>
+              <a href="#shop">Магазин</a>
+            </li>
+          </ul>
+          <button className="cta-button">Заказать</button>
+        </nav>
+      </header>
 
-      <div className="hero-section">
-        <div className="hero-background"></div>
-        <div className="hero-container">
-          <div className="hero-content">
-            <div className="hero-text">
-              <div className="hero-badge">
-                <span className="badge-dot"></span>
-                Now available in 50+ cities
-              </div>
-
-              <h2 className="hero-title">
-                Your coffee, <span className="highlight">delivered</span> in minutes
-              </h2>
-
-              <div className="hero-description">
-                Skip the lines, earn rewards, and enjoy perfectly crafted coffee from your favorite
-                local cafés. The future of coffee ordering is here.
-              </div>
-
-              <div className="hero-buttons">
-                <button className="primary-button">
-                  Get Started Now
-                  <ArrowRight className="button-icon" />
-                </button>
-                <a className="secondary-button">
-                  <Play className="button-icon-left" />
-                  Watch Demo
-                </a>
-              </div>
-            </div>
-
-            <div className="hero-image-container">
-              <div className="phone-wrapper">
-                <div className="floating-bubble purple"></div>
-                <div className="floating-bubble green"></div>
-                <div className="floating-bubble orange"></div>
-
-                <div className="phone-image"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="stats-section">
-        <div className="stats-container">
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number">50K+</div>
-              <div className="stat-label">Happy Customers</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">200+</div>
-              <div className="stat-label">Partner Cafés</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">1M+</div>
-              <div className="stat-label">Orders Delivered</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="features-section">
-        <div className="features-container">
-          <div className="features-header">
-            <h1 className="features-title">
-              Why choose <span className="highlight">BrewPass</span>
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>
+              Ветеринарная аптека
+              <br />
+              которой доверяют
             </h1>
-            <p className="features-description">
-              {
-                "We're revolutionizing how you experience coffee with cutting-edge technology and seamless user experience."
-              }
+            <p className="hero-subtitle">
+              Более 10 лет заботимся о здоровье ваших питомцев.
+              <br />
+              Качественные лекарства и профессиональные консультации.
             </p>
+            <div className="hero-stats">
+              <span className="rating">★★★★★ 4.9</span>
+              <span className="reviews">на основе 2847 отзывов</span>
+            </div>
+            <button className="hero-cta">Получить консультацию</button>
           </div>
+          <div className="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500&h=400&fit=crop"
+              alt="Ветеринар с собакой"
+            />
+          </div>
+        </div>
+        <div className="hero-decoration">
+          <div className="decoration-item decoration-1"></div>
+          <div className="decoration-item decoration-2"></div>
+          <div className="decoration-item decoration-3"></div>
+        </div>
+      </section>
 
+      {/* Mission Section */}
+      <section className="mission">
+        <div className="container">
+          <div className="mission-content">
+            <div className="mission-image">
+              <img
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=500&fit=crop"
+                alt="Кот у ветеринара"
+              />
+            </div>
+            <div className="mission-text">
+              <h2>
+                Мы создали аптеку,
+                <br />о которой мечтали
+                <br />
+                все владельцы питомцев
+              </h2>
+              <p>
+                Когда наш собственный питомец заболел, мы поняли, как сложно найти качественные
+                лекарства и получить профессиональную консультацию. Именно тогда мы решили создать
+                PetCare+ — место, где каждый питомец получает лучший уход.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="container">
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-card-inner">
-                <div className="feature-icon orange">
-                  <Clock className="icon" />
-                </div>
-                <h2 className="feature-title">Skip the Queue</h2>
-                <p className="feature-description">
-                  Order ahead and collect your coffee without waiting. Perfect for busy mornings.
-                </p>
+              <div className="feature-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=80&h=80&fit=crop"
+                  alt="Быстрая доставка"
+                />
               </div>
+              <h3>Питомцы — наш приоритет</h3>
+              <p>
+                Мы понимаем, как важно быстро получить помощь, когда питомец болен. Поэтому
+                предлагаем доставку в день заказа по Москве и области. Ваш любимец не будет ждать.
+              </p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-card-inner">
-                <div className="feature-icon purple">
-                  <Star className="icon" />
-                </div>
-                <h2 className="feature-title">Loyalty Rewards</h2>
-                <p className="feature-description">
-                  Earn points with every purchase and unlock exclusive drinks and discounts.
-                </p>
+              <div className="feature-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=80&h=80&fit=crop"
+                  alt="Индивидуальный подход"
+                />
               </div>
+              <h3>Индивидуальный подход</h3>
+              <p>
+                Работаем с вами и вашим ветеринаром, чтобы найти оптимальное решение. Изготавливаем
+                лекарства по индивидуальным рецептам, подбираем дозировку и форму выпуска. Даже вкус
+                можем сделать привлекательным!
+              </p>
+              <small>P.S. Большинство собак обожают вкус курицы! 🐕</small>
             </div>
 
             <div className="feature-card">
-              <div className="feature-card-inner">
-                <div className="feature-icon green">
-                  <Gift className="icon" />
-                </div>
-                <h2 className="feature-title">Send Coffee</h2>
-                <p className="feature-description">
-                  Surprise friends and colleagues with their favorite drinks delivered instantly.
-                </p>
+              <div className="feature-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=80&h=80&fit=crop"
+                  alt="Круглосуточная поддержка"
+                />
               </div>
+              <h3>Поддержка 24/7</h3>
+              <p>
+                Вы не останетесь один на один с проблемой. Звоните, пишите или приезжайте к нам — мы
+                ответим и поможем в любое время. Немного солнечного настроения прилагается! ☀️
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* CTA Section */}
       <section className="cta-section">
-        <div className="cta-overlay"></div>
-        <div className="cta-container">
-          <h1 className="cta-title">Ready to transform your coffee experience?</h1>
-          <p className="cta-description">
-            {
-              "Join thousands of coffee lovers who've already made the switch to smarter coffee ordering."
-            }
-          </p>
-          <div className="cta-buttons">
-            <button className="cta-button-white">
-              Download for iOS
-              <ArrowRight className="button-icon" />
-            </button>
-            <button className="cta-button-outline">
-              Download for Android
-              <ArrowRight className="button-icon" />
-            </button>
+        <div className="container">
+          <div className="cta-content">
+            <h2>Готовы позаботиться о здоровье питомца?</h2>
+            <p>Получите бесплатную консультацию и узнайте, как мы можем помочь</p>
+            <button className="cta-button-large">Начать сейчас</button>
           </div>
         </div>
       </section>
 
-      <div className="footer">
-        <div className="footer-container">
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
           <div className="footer-content">
-            <div className="footer-logo">
-              <div className="footer-logo-icon">
-                <Coffee className="icon" />
+            <div className="footer-brand">
+              <h3>PetCare+</h3>
+              <p>Забота о питомцах — наша страсть</p>
+            </div>
+            <div className="footer-links">
+              <div className="footer-column">
+                <h4>Услуги</h4>
+                <ul>
+                  <li>
+                    <a href="#">Лекарства</a>
+                  </li>
+                  <li>
+                    <a href="#">Консультации</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка</a>
+                  </li>
+                </ul>
               </div>
-              <span className="footer-logo-text">BrewPass</span>
+              <div className="footer-column">
+                <h4>Компания</h4>
+                <ul>
+                  <li>
+                    <a href="#">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-column">
+                <h4>Контакты</h4>
+                <p>+7 (495) 123-45-67</p>
+                <p>info@petcareplus.ru</p>
+              </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 BrewPass. All rights reserved.</p>
+            <p>&copy; 2024 PetCare+. Все права защищены.</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
