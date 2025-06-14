@@ -4,36 +4,36 @@ export default function Home() {
   return (
     <div className="education-platform">
       {/* Header */}
-      <header className="header">
-        <nav className="navbar">
+      <div className="header">
+        <div className="navbar">
           <div className="logo">
             <h2>LearnHub</h2>
           </div>
-          <ul className="nav-links">
-            <li>
+          <div className="nav-links">
+            <div>
               <a href="#home">Главная</a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="#courses">Курсы</a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="#pricing">Цены</a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="#contact">Контакты</a>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div className="nav-buttons">
             <a href="#login" className="login-btn">
               Войти
             </a>
             <button className="join-btn">Присоединиться</button>
           </div>
-        </nav>
-      </header>
+        </div>
+      </div>
 
       {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="hero-container">
           <div className="hero-content">
             <div className="hero-badge">Начни обучение</div>
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Features Section */}
       <section className="features">
@@ -123,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="about">
+      <div className="about">
         <div className="container">
           <div className="about-content">
             <div className="about-text">
@@ -139,10 +139,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Courses Section */}
-      <section className="courses">
+      <div className="courses">
         <div className="container">
           <div className="courses-grid">
             <div className="course-card">
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
               <div className="course-content">
                 <div className="course-category">Веб-разработка</div>
-                <h3>Современная веб-разработка</h3>
+                <h1 className="course-title">Современная веб-разработка</h1>
                 <p>Изучите современные технологии веб-разработки от основ до продвинутых техник.</p>
                 <div className="course-stats">
                   <span className="students">
@@ -199,7 +199,7 @@ export default function Home() {
               </div>
               <div className="course-content">
                 <div className="course-category">Аналитика данных</div>
-                <h3>Data Science и машинное обучение</h3>
+                <h1 className="course-title">Data Science и машинное обучение</h1>
                 <p>Станьте экспертом в области анализа данных и машинного обучения.</p>
                 <div className="course-stats">
                   <span className="students">
@@ -235,7 +235,7 @@ export default function Home() {
               </div>
               <div className="course-content">
                 <div className="course-category">Дизайн</div>
-                <h3>UI/UX дизайн с нуля</h3>
+                <h1 className="course-title">UI/UX дизайн с нуля</h1>
                 <p>Освойте профессию UI/UX дизайнера и создавайте удобные интерфейсы.</p>
                 <div className="course-stats">
                   <span className="students">
@@ -254,7 +254,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
