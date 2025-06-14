@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <div className="pet-pharmacy">
       {/* Header */}
-      <header className="header">
-        <nav className="nav">
+      <div className="header">
+        <div className="nav">
           <div className="logo">
             <h2>PetCare+</h2>
           </div>
@@ -22,11 +22,11 @@ export default function Home() {
             </li>
           </ul>
           <button className="cta-button">Заказать</button>
-        </nav>
-      </header>
+        </div>
+      </div>
 
       {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
             <h1>
@@ -45,30 +45,20 @@ export default function Home() {
             </div>
             <button className="hero-cta">Получить консультацию</button>
           </div>
-          <div className="hero-image">
-            <img
-              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500&h=400&fit=crop"
-              alt="Ветеринар с собакой"
-            />
-          </div>
+          <div className="hero-image">Картинка с питомцем</div>
         </div>
         <div className="hero-decoration">
           <div className="decoration-item decoration-1"></div>
           <div className="decoration-item decoration-2"></div>
           <div className="decoration-item decoration-3"></div>
         </div>
-      </section>
+      </div>
 
       {/* Mission Section */}
       <section className="mission">
         <div className="container">
           <div className="mission-content">
-            <div className="mission-image">
-              <img
-                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=500&fit=crop"
-                alt="Кот у ветеринара"
-              />
-            </div>
+            <div className="mission-image">Картинка с питомцем</div>
             <div className="mission-text">
               <h2>
                 Мы создали аптеку,
@@ -87,17 +77,12 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="features">
+      <div className="features">
         <div className="container">
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=80&h=80&fit=crop"
-                  alt="Быстрая доставка"
-                />
-              </div>
-              <h3>Питомцы — наш приоритет</h3>
+              <div className="feature-icon">Картинка 1</div>
+              <h1 className="feature-card__title">Питомцы — наш приоритет</h1>
               <p>
                 Мы понимаем, как важно быстро получить помощь, когда питомец болен. Поэтому
                 предлагаем доставку в день заказа по Москве и области. Ваш любимец не будет ждать.
@@ -105,13 +90,8 @@ export default function Home() {
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=80&h=80&fit=crop"
-                  alt="Индивидуальный подход"
-                />
-              </div>
-              <h3>Индивидуальный подход</h3>
+              <div className="feature-icon">Картинка 2</div>
+              <h1 className="feature-card__title">Индивидуальный подход</h1>
               <p>
                 Работаем с вами и вашим ветеринаром, чтобы найти оптимальное решение. Изготавливаем
                 лекарства по индивидуальным рецептам, подбираем дозировку и форму выпуска. Даже вкус
@@ -121,13 +101,8 @@ export default function Home() {
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=80&h=80&fit=crop"
-                  alt="Круглосуточная поддержка"
-                />
-              </div>
-              <h3>Поддержка 24/7</h3>
+              <div className="feature-icon">Картинка 3</div>
+              <h1 className="feature-card__title">Поддержка 24/7</h1>
               <p>
                 Вы не останетесь один на один с проблемой. Звоните, пишите или приезжайте к нам — мы
                 ответим и поможем в любое время. Немного солнечного настроения прилагается! ☀️
@@ -135,7 +110,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* CTA Section */}
       <section className="cta-section">
