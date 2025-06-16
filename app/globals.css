@@ -13,8 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 1200px;
   padding: 0 20px;
 }
 
@@ -33,7 +32,6 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 20px;
 }
 
@@ -219,9 +217,9 @@ body {
 
 .cta-button {
   background: #e50914;
-  color: #ffffff;
+  color: #000;
   border: none;
-  padding: 15px 30px;
+  padding: 40px 100px;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
@@ -311,7 +309,7 @@ body {
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
   gap: 30px;
 }
 

@@ -3,8 +3,7 @@ import { Play, Search, Bell, ChevronLeft, ChevronRight } from "lucide-react";
 const StreamingPage = () => {
   return (
     <div className="streaming-page">
-      {/* Header */}
-      <header className="header">
+      <div className="header">
         <div className="container">
           <div className="nav-brand">
             <div className="logo">
@@ -13,7 +12,7 @@ const StreamingPage = () => {
             </div>
           </div>
 
-          <nav className="nav-menu">
+          <div className="nav-menu">
             <a href="#" className="nav-link active">
               Home
             </a>
@@ -26,7 +25,7 @@ const StreamingPage = () => {
             <a href="#" className="nav-link">
               Subscriptions
             </a>
-          </nav>
+          </div>
 
           <div className="nav-actions">
             <button className="icon-btn">
@@ -37,10 +36,9 @@ const StreamingPage = () => {
             </button>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="hero-background">
           <div className="movie-grid">
             <div className="movie-card">
@@ -99,10 +97,9 @@ const StreamingPage = () => {
             Start Watching Now
           </button>
         </div>
-      </section>
+      </div>
 
-      {/* Categories Section */}
-      <section className="categories">
+      <div className="categories">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Explore our wide variety of categories</h2>
@@ -135,7 +132,7 @@ const StreamingPage = () => {
                 <img src="/img/film-4.jpeg" alt="Action 4" />
               </div>
               <div className="category-info">
-                <h3 className="category-title">Action</h3>
+                <h1 className="category-title">Action</h1>
                 <ChevronRight className="category-arrow" />
               </div>
             </div>
@@ -148,7 +145,7 @@ const StreamingPage = () => {
                 <img src="/img/film-8.jpeg" alt="Adventure 4" />
               </div>
               <div className="category-info">
-                <h3 className="category-title">Adventure</h3>
+                <h1 className="category-title">Adventure</h1>
                 <ChevronRight className="category-arrow" />
               </div>
             </div>
@@ -161,7 +158,7 @@ const StreamingPage = () => {
                 <img src="/img/film-12.jpeg" alt="Comedy 4" />
               </div>
               <div className="category-info">
-                <h3 className="category-title">Comedy</h3>
+                <h1 className="category-title">Comedy</h1>
                 <ChevronRight className="category-arrow" />
               </div>
             </div>
@@ -174,7 +171,7 @@ const StreamingPage = () => {
                 <img src="/img/film-16.jpeg" alt="Drama 4" />
               </div>
               <div className="category-info">
-                <h3 className="category-title">Drama</h3>
+                <h1 className="category-title">Drama</h1>
                 <ChevronRight className="category-arrow" />
               </div>
             </div>
@@ -184,16 +181,16 @@ const StreamingPage = () => {
                 <img src="/img/film-17.jpeg" alt="Horror 1" />
                 <img src="/img/film-18.jpeg" alt="Horror 2" />
                 <img src="/img/film-19.jpeg" alt="Horror 3" />
-                <img src="20" alt="Horror 4" />
+                <img src="/img/film-20.jpeg" alt="Horror 4" />
               </div>
               <div className="category-info">
-                <h3 className="category-title">Horror</h3>
+                <h1 className="category-title">Horror</h1>
                 <ChevronRight className="category-arrow" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
