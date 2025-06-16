@@ -1,103 +1,148 @@
-export default function Home() {
+import { Phone, Mail, MapPin, Clock, Coffee, Users, Award } from "lucide-react";
+
+const HomePage = () => {
   return (
-    <div className="page-container">
-      {/* Header Section */}
+    <div className="restaurant-layout">
       <div className="header">
-        <div className="navbar">
+        <div className="container">
           <div className="logo">
-            <span className="logo-icon">🌏</span>
-            <span className="logo-text">EXPLORE INDONESIA</span>
+            <span className="logo-icon">F</span>
+            <span className="logo-text">OODI</span>
           </div>
-          <div className="nav-menu">
-            <div>
-              <a href="#destinations">DESTINATIONS</a>
-            </div>
-            <div>
-              <a href="#experiences">EXPERIENCES</a>
-            </div>
-            <div>
-              <a href="#about">ABOUT</a>
-            </div>
-            <div>
-              <a href="#gallery">GALLERY</a>
-            </div>
+          <div className="nav">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </div>
-          <div className="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <button className="reservation-btn">RESERVATION</button>
         </div>
       </div>
 
-      {/* Hero Section */}
       <div className="hero">
-        <div className="hero-background">Карта Индонезии с яркими цветами и текстурой</div>
-        <div className="hero-content">
-          <h1 className="hero-title">
-            EXPLORE
-            <br />
-            INDONESIA
-          </h1>
-          <button className="cta-button">Start travelling</button>
-        </div>
-
-        <div className="features-grid">
-          <div className="feature-card">
-            <span className="feature-number">01</span>
-            <h3 className="feature-card-title">Amazing Temples</h3>
-            <p>Discover ancient temples and rich cultural heritage across the archipelago</p>
-          </div>
-          <div className="feature-card">
-            <span className="feature-number">02</span>
-            <h3 className="feature-card-title">Pristine Beaches</h3>
-            <p>Relax on world-class beaches with crystal clear waters and white sand</p>
-          </div>
-          <div className="feature-card">
-            <span className="feature-number">03</span>
-            <h3 className="feature-card-title">Jungle Adventures</h3>
-            <p>Experience wildlife and nature in some of the world oldest rainforests</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Walkways Section */}
-      <div className="post-section walkways-section">
-        <div className="section-container">
-          <div className="content-row">
-            <div className="image-column">Картинка деревянных дорожек в джунглях Индонезии</div>
-            <div className="text-column">
-              <h2 className="section-title">The walkways of Indonesia spellbind</h2>
-              <p className="section-description">
-                Journey through breathtaking landscapes on wooden pathways that wind through
-                pristine nature reserves, offering unforgettable views of Indonesia diverse
-                ecosystems and stunning natural beauty.
-              </p>
-              <button className="learn-more-button">Learn More</button>
+        <div className="hero-overlay">
+          <div className="container">
+            <div className="hero-content">
+              <p className="hero-subtitle">HELLO, NEW FRIEND</p>
+              <h5 className="hero-title">RESERVE YOUR TABLE</h5>
+              <div className="hero-buttons">
+                <button className="btn btn-primary">BOOK A TABLE</button>
+                <button className="btn btn-secondary">OUR MENU</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Beaches Section */}
-      <div className="post-section beaches-section">
-        <div className="section-container">
-          <div className="content-row">
-            <div className="image-column">
-              Картинка пляжа с пальмами и белым песком на фоне заката
-            </div>
-            <div className="text-column">
-              <h2 className="section-title">Perfect beaches exude relaxation and fun</h2>
-              <p className="section-description">
-                Escape to paradise on Indonesia magnificent coastlines where turquoise waters meet
-                golden sands, creating the perfect setting for both adventure and tranquility under
-                swaying palm trees.
+      <div className="about">
+        <div className="container">
+          <div className="about-grid">
+            <div className="about-content">
+              <p className="section-subtitle">ABOUT US</p>
+              <h2 className="section-title">We Invite You to Visit Our Coffee House</h2>
+              <p className="section-text">
+                Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget
+                cras sit semper at enim. Turpis aliquet ut ac eu donec ut. Sagittis vestibulum at
+                quis non massa tellus.
               </p>
-              <button className="learn-more-button">Learn More</button>
+              <button className="btn btn-primary">READ MORE</button>
+            </div>
+            <div className="about-image">Картинка с изображением кофе</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="menu">
+        <div className="container">
+          <div className="menu-grid">
+            <div className="menu-image">Картинка с изображением меню или кофе</div>
+            <div className="menu-content">
+              <p className="section-subtitle">COFFEE MENU</p>
+              <h2 className="section-title">Quality Kava Beans</h2>
+              <p className="section-text">
+                Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget
+                cras sit semper at enim. Turpis aliquet ut ac eu donec ut. Sagittis vestibulum at
+                quis non massa tellus.
+              </p>
+              <button className="btn btn-primary">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="features">
+        <div className="container">
+          <div className="features-header">
+            <p className="section-subtitle">WHY CHOOSE US</p>
+            <h2 className="section-title">Experience Excellence</h2>
+          </div>
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Coffee />
+              </div>
+              <h3>Premium Coffee</h3>
+              <p>Fresh roasted beans from the finest plantations around the world</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Users />
+              </div>
+              <h3>Expert Team</h3>
+              <p>Professional baristas with years of experience in coffee making</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Award />
+              </div>
+              <h3>Award Winning</h3>
+              <p>Recognized for our exceptional quality and customer service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="container">
+          <div className="footer-grid">
+            <div className="footer-section">
+              <div className="logo">
+                <span className="logo-icon">F</span>
+                <span className="logo-text">OODI</span>
+              </div>
+              <p>Creating memorable dining experiences with passion and quality.</p>
+            </div>
+            <div className="footer-section">
+              <h4>Contact Info</h4>
+              <div className="contact-item">
+                <Phone size={16} />
+                <span>+1 234 567 8900</span>
+              </div>
+              <div className="contact-item">
+                <Mail size={16} />
+                <span>info@foodi.com</span>
+              </div>
+              <div className="contact-item">
+                <MapPin size={16} />
+                <span>123 Restaurant St, City</span>
+              </div>
+            </div>
+            <div className="footer-section">
+              <h4>Opening Hours</h4>
+              <div className="contact-item">
+                <Clock size={16} />
+                <span>Mon-Fri: 8AM - 10PM</span>
+              </div>
+              <div className="contact-item">
+                <Clock size={16} />
+                <span>Sat-Sun: 9AM - 11PM</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default HomePage;
