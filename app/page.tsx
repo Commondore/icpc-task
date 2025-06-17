@@ -3,28 +3,19 @@ import { ShoppingCart, Heart, Search, Leaf, Star, Shield, Truck } from "lucide-r
 const SeedraPage = () => {
   return (
     <div className="app">
-      {/* Header */}
-      <header className="header">
+      <div className="header">
         <div className="container">
           <div className="header-content">
             <div className="logo">
               <Leaf className="logo-icon" />
               <span>SEEDRA</span>
             </div>
-            <nav className="nav">
-              <a href="#" className="nav-link">
-                ВСЕ ТОВАРЫ
-              </a>
-              <a href="#" className="nav-link">
-                О SEEDRA
-              </a>
-              <a href="#" className="nav-link">
-                БЛОГ
-              </a>
-              <a href="#" className="nav-link">
-                КОНТАКТЫ
-              </a>
-            </nav>
+            <div className="nav">
+              <div className="nav-link">ВСЕ ТОВАРЫ</div>
+              <div className="nav-link">О SEEDRA</div>
+              <div className="nav-link">БЛОГ</div>
+              <div className="nav-link">КОНТАКТЫ</div>
+            </div>
             <div className="header-actions">
               <button className="icon-btn">
                 <Search size={20} />
@@ -38,14 +29,13 @@ const SeedraPage = () => {
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>SEEDRA Семена базилика для выращивания дома и в саду</h1>
+              <h3>SEEDRA Семена базилика для выращивания дома и в саду</h3>
               <p>
                 Убедитесь в нашем качестве - самые свежие партии этого сезона. Без ГМО, семейная
                 реликвия - наши семена протестированы и имеют лучшие показатели всхожести. Ваш
@@ -64,15 +54,12 @@ const SeedraPage = () => {
               </div>
             </div>
 
-            <div className="hero-image">
-              <img src="/img/main.jpg" alt="Семена базилика SEEDRA" className="product-image" />
-            </div>
+            <div className="hero-image">Картинка с семенами базилика</div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Features Section */}
-      <section className="features">
+      <div className="features">
         <div className="container">
           <div className="features-header">
             <h2>Мы продаем семена</h2>
@@ -105,22 +92,21 @@ const SeedraPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Products Preview */}
-      <section className="products-preview">
+      <div className="products-preview">
         <div className="container">
           <h2>Популярные товары</h2>
           <div className="products-grid">
             <div className="product-card">
               <div className="product-image-container">
-                <img src="/img/tomato.jpg" alt="Семена томатов" className="product-card-image" />
+                Картинка с семенами томатов
                 <button className="favorite-btn">
                   <Heart size={20} />
                 </button>
               </div>
               <div className="product-info">
-                <h3>Семена томатов</h3>
+                <h1 className="product-title">Семена томатов</h1>
                 <div className="rating">
                   <Star size={16} fill="currentColor" />
                   <Star size={16} fill="currentColor" />
@@ -140,13 +126,13 @@ const SeedraPage = () => {
 
             <div className="product-card">
               <div className="product-image-container">
-                <img src="/img/cucumber.jpg" alt="Семена огурцов" className="product-card-image" />
+                Картинка с семенами огурцов
                 <button className="favorite-btn">
                   <Heart size={20} />
                 </button>
               </div>
               <div className="product-info">
-                <h3>Семена огурцов</h3>
+                <h1 className="product-title">Семена огурцов</h1>
                 <div className="rating">
                   <Star size={16} fill="currentColor" />
                   <Star size={16} fill="currentColor" />
@@ -166,13 +152,13 @@ const SeedraPage = () => {
 
             <div className="product-card">
               <div className="product-image-container">
-                <img src="/img/carrot.jpeg" alt="Семена моркови" className="product-card-image" />
+                Картинка с семенами моркови
                 <button className="favorite-btn">
                   <Heart size={20} />
                 </button>
               </div>
               <div className="product-info">
-                <h3>Семена моркови</h3>
+                <h1 className="product-title">Семена моркови</h1>
                 <div className="rating">
                   <Star size={16} fill="currentColor" />
                   <Star size={16} fill="currentColor" />
@@ -191,7 +177,7 @@ const SeedraPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
