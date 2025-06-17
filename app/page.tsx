@@ -1,185 +1,227 @@
-import { ShoppingCart, Heart, Search, Leaf, Star, Shield, Truck } from "lucide-react";
+import { Play, BookOpen, Users, Award, Clock, Star } from "lucide-react";
 
-const SeedraPage = () => {
+const OnlineLearningPage = () => {
   return (
     <div className="app">
-      <div className="header">
+      {/* Header */}
+      <header className="header">
         <div className="container">
-          <div className="header-content">
+          <div className="nav">
             <div className="logo">
-              <Leaf className="logo-icon" />
-              <span>SEEDRA</span>
+              <span className="logo-text">EduMaster</span>
             </div>
-            <div className="nav">
-              <div className="nav-link">ВСЕ ТОВАРЫ</div>
-              <div className="nav-link">О SEEDRA</div>
-              <div className="nav-link">БЛОГ</div>
-              <div className="nav-link">КОНТАКТЫ</div>
-            </div>
-            <div className="header-actions">
-              <button className="icon-btn">
-                <Search size={20} />
-              </button>
-              <button className="icon-btn">
-                <Heart size={20} />
-              </button>
-              <button className="icon-btn">
-                <ShoppingCart size={20} />
-              </button>
-            </div>
+            <nav className="nav-links">
+              <a href="#" className="nav-link">
+                Home
+              </a>
+              <a href="#" className="nav-link">
+                Courses
+              </a>
+              <a href="#" className="nav-link">
+                About
+              </a>
+              <a href="#" className="nav-link">
+                Contact
+              </a>
+            </nav>
+            <button className="login-btn">Login</button>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div className="hero">
+      {/* Hero Section */}
+      <section className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h3>SEEDRA Семена базилика для выращивания дома и в саду</h3>
-              <p>
-                Убедитесь в нашем качестве - самые свежие партии этого сезона. Без ГМО, семейная
-                реликвия - наши семена протестированы и имеют лучшие показатели всхожести. Ваш
-                легкий опыт выращивания - наша гарантия.
+              <h1 className="hero-title">
+                Master New Skills with
+                <span className="highlight"> Expert Instructors</span>
+              </h1>
+              <p className="hero-description">
+                Join thousands of students learning from industry professionals. Access high-quality
+                courses, interactive lessons, and personalized feedback.
               </p>
-
-              <div className="price-section">
-                <div className="price-badge">🔥</div>
-                <span className="current-price">₽899</span>
-                <span className="old-price">₽1,199</span>
-              </div>
-
               <div className="hero-actions">
-                <button className="btn-primary">В корзину</button>
-                <button className="btn-secondary">Подробнее</button>
+                <button className="cta-btn">
+                  <Play className="btn-icon" />
+                  Start Learning
+                </button>
+                <button className="secondary-btn">
+                  <BookOpen className="btn-icon" />
+                  Browse Courses
+                </button>
+              </div>
+              <div className="hero-stats">
+                <div className="stat">
+                  <Users className="stat-icon" />
+                  <span className="stat-number">50K+</span>
+                  <span className="stat-label">Students</span>
+                </div>
+                <div className="stat">
+                  <BookOpen className="stat-icon" />
+                  <span className="stat-number">200+</span>
+                  <span className="stat-label">Courses</span>
+                </div>
+                <div className="stat">
+                  <Award className="stat-icon" />
+                  <span className="stat-number">95%</span>
+                  <span className="stat-label">Success Rate</span>
+                </div>
               </div>
             </div>
-
-            <div className="hero-image">Картинка с семенами базилика</div>
+            <div className="hero-image">
+              <img src="/img/main.jpg" alt="Students learning online" className="hero-img" />
+              <div className="floating-card">
+                <Clock className="card-icon" />
+                <div className="card-content">
+                  <span className="card-title">Live Classes</span>
+                  <span className="card-subtitle">Daily at 7 PM</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <div className="hero-decoration"></div>
+      </section>
 
-      <div className="features">
+      {/* Features Section */}
+      <section className="features">
         <div className="container">
-          <div className="features-header">
-            <h2>Мы продаем семена</h2>
-            <p>которые всегда прорастают, и садовые принадлежности, которые никогда не ломаются</p>
+          <div className="section-header">
+            <h2 className="section-title">Why Choose EduMaster?</h2>
+            <p className="section-description">
+              Experience the future of online education with our innovative platform
+            </p>
           </div>
-
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">
-                <Shield size={40} />
+                <Play />
               </div>
-              <h3>Гарантия качества</h3>
-              <p>Все наши семена проходят строгий контроль качества и имеют высокую всхожесть</p>
+              <h3 className="feature-title">Interactive Video Lessons</h3>
+              <p className="feature-description">
+                Engage with high-quality video content featuring real-world examples and hands-on
+                exercises.
+              </p>
+              <img src="/img/pic-1.avif" alt="Video lessons" className="feature-image" />
             </div>
-
             <div className="feature-card">
               <div className="feature-icon">
-                <Truck size={40} />
+                <Users />
               </div>
-              <h3>Быстрая доставка</h3>
-              <p>Доставляем по всей России в течение 2-5 рабочих дней</p>
+              <h3 className="feature-title">Expert Mentorship</h3>
+              <p className="feature-description">
+                Get personalized guidance from industry professionals and experienced instructors.
+              </p>
+              <img src="/img/pic-2.avif" alt="Mentorship" className="feature-image" />
             </div>
-
             <div className="feature-card">
               <div className="feature-icon">
-                <Leaf size={40} />
+                <Award />
               </div>
-              <h3>Экологично</h3>
-              <p>Только органические семена без ГМО и химических обработок</p>
+              <h3 className="feature-title">Certified Programs</h3>
+              <p className="feature-description">
+                Earn recognized certifications that boost your career and validate your skills.
+              </p>
+              <img src="/img/pic-3.avif" alt="Certification" className="feature-image" />
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="products-preview">
+      {/* Popular Courses Section */}
+      <section className="courses">
         <div className="container">
-          <h2>Популярные товары</h2>
-          <div className="products-grid">
-            <div className="product-card">
-              <div className="product-image-container">
-                Картинка с семенами томатов
-                <button className="favorite-btn">
-                  <Heart size={20} />
-                </button>
-              </div>
-              <div className="product-info">
-                <h1 className="product-title">Семена томатов</h1>
-                <div className="rating">
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <span>(4.9)</span>
+          <div className="section-header">
+            <h2 className="section-title">Popular Courses</h2>
+            <p className="section-description">
+              Start your learning journey with our most loved courses
+            </p>
+          </div>
+          <div className="courses-grid">
+            <div className="course-card">
+              <img src="/img/develop.avif" alt="Web Development" className="course-image" />
+              <div className="course-content">
+                <div className="course-category">Development</div>
+                <h3 className="course-title">Complete Web Development Bootcamp</h3>
+                <div className="course-rating">
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <span className="rating-text">4.9 (2,340)</span>
                 </div>
-                <div className="product-footer">
-                  <div className="product-price">₽659</div>
-                  <button className="add-to-cart-btn">
-                    <ShoppingCart size={18} />
-                  </button>
+                <div className="course-meta">
+                  <span className="course-duration">
+                    <Clock className="meta-icon" />
+                    12 weeks
+                  </span>
+                  <span className="course-students">
+                    <Users className="meta-icon" />
+                    5,200 students
+                  </span>
                 </div>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image-container">
-                Картинка с семенами огурцов
-                <button className="favorite-btn">
-                  <Heart size={20} />
-                </button>
-              </div>
-              <div className="product-info">
-                <h1 className="product-title">Семена огурцов</h1>
-                <div className="rating">
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} />
-                  <span>(4.7)</span>
-                </div>
-                <div className="product-footer">
-                  <div className="product-price">₽549</div>
-                  <button className="add-to-cart-btn">
-                    <ShoppingCart size={18} />
-                  </button>
-                </div>
+                <div className="course-price">$99</div>
               </div>
             </div>
-
-            <div className="product-card">
-              <div className="product-image-container">
-                Картинка с семенами моркови
-                <button className="favorite-btn">
-                  <Heart size={20} />
-                </button>
+            <div className="course-card">
+              <img src="/img/data.avif" alt="Data Science" className="course-image" />
+              <div className="course-content">
+                <div className="course-category">Data Science</div>
+                <h3 className="course-title">Python for Data Analysis</h3>
+                <div className="course-rating">
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon" />
+                  <span className="rating-text">4.7 (1,890)</span>
+                </div>
+                <div className="course-meta">
+                  <span className="course-duration">
+                    <Clock className="meta-icon" />8 weeks
+                  </span>
+                  <span className="course-students">
+                    <Users className="meta-icon" />
+                    3,400 students
+                  </span>
+                </div>
+                <div className="course-price">$79</div>
               </div>
-              <div className="product-info">
-                <h1 className="product-title">Семена моркови</h1>
-                <div className="rating">
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <Star size={16} fill="currentColor" />
-                  <span>(5.0)</span>
+            </div>
+            <div className="course-card">
+              <img src="/img/marketing.avif" alt="Digital Marketing" className="course-image" />
+              <div className="course-content">
+                <div className="course-category">Marketing</div>
+                <h3 className="course-title">Digital Marketing Mastery</h3>
+                <div className="course-rating">
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <Star className="star-icon filled" />
+                  <span className="rating-text">4.8 (3,120)</span>
                 </div>
-                <div className="product-footer">
-                  <div className="product-price">₽449</div>
-                  <button className="add-to-cart-btn">
-                    <ShoppingCart size={18} />
-                  </button>
+                <div className="course-meta">
+                  <span className="course-duration">
+                    <Clock className="meta-icon" />
+                    10 weeks
+                  </span>
+                  <span className="course-students">
+                    <Users className="meta-icon" />
+                    7,800 students
+                  </span>
                 </div>
+                <div className="course-price">$89</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
 
-export default SeedraPage;
+export default OnlineLearningPage;
