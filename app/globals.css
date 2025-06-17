@@ -284,6 +284,8 @@ body {
 }
 
 .feature-card {
+  display: flex;
+  flex-direction: column-reverse;
   background: white;
   border-radius: 20px;
   padding: 2rem;
@@ -337,7 +339,6 @@ body {
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 }
 
@@ -406,8 +407,6 @@ body {
 }
 
 .course-meta {
-  display: flex;
-  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -438,7 +437,6 @@ body {
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
   }
@@ -458,7 +456,6 @@ body {
 
   .features-grid,
   .courses-grid {
-    grid-template-columns: 1fr;
   }
 
   .feature-card,
