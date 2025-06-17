@@ -27,10 +27,7 @@ body {
 }
 
 .header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 20px;
+  display: flex; /* Уберем правильное выравнивание */
 }
 
 .logo {
@@ -53,11 +50,10 @@ body {
 
 .nav {
   display: flex;
-  gap: 2rem;
+  /* Уберем отступы */
 }
 
 .nav-link {
-  text-decoration: none;
   color: #666;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -108,10 +104,9 @@ body {
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex; /* Сломаем grid на flex */
   align-items: center;
+  gap: 3rem;
 }
 
 .hero-title {
@@ -495,8 +490,7 @@ body {
   }
 
   .categories {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .delivery-info {

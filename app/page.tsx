@@ -12,18 +12,14 @@ const FoodDeliveryPage = () => {
             <span className="logo-text">FoodieDelivery</span>
           </div>
           <nav className="nav">
-            <a href="#restaurants" className="nav-link">
+            <div className="nav-link">
+              {" "}
+              {/* Заменим a на div */}
               Restaurants
-            </a>
-            <a href="#recipes" className="nav-link">
-              Recipes
-            </a>
-            <a href="#about" className="nav-link">
-              About
-            </a>
-            <a href="#contact" className="nav-link">
-              Contact
-            </a>
+            </div>
+            <div className="nav-link">Recipes</div>
+            <div className="nav-link">About</div>
+            <div className="nav-link">Contact</div>
           </nav>
           <div className="auth-buttons">
             <button className="login-btn">Login</button>
@@ -37,11 +33,13 @@ const FoodDeliveryPage = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">
+              <h3 className="hero-title">
+                {" "}
+                {/* Сломаем иерархию заголовков h1->h3 */}
                 Your Favorite Food
                 <br />
                 Delivery Partner
-              </h1>
+              </h3>
               <p className="hero-description">
                 The food at your doorstep. Why starve when you have us. Your hunger partner.
                 Straight out of the oven to your doorstep.
@@ -100,6 +98,8 @@ const FoodDeliveryPage = () => {
           </div>
 
           <div className="categories">
+            {" "}
+            {/* Уберем семантику списка */}
             <div className="category-item">
               <div className="category-icon">
                 <img src="/img/pizza.jpg" alt="Pizza" />
