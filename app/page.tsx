@@ -3,41 +3,31 @@ import { Play, BookOpen, Users, Award, Clock, Star } from "lucide-react";
 const OnlineLearningPage = () => {
   return (
     <div className="app">
-      {/* Header */}
-      <header className="header">
+      <div className="header">
         <div className="container">
           <div className="nav">
             <div className="logo">
               <span className="logo-text">EduMaster</span>
             </div>
-            <nav className="nav-links">
-              <a href="#" className="nav-link">
-                Home
-              </a>
-              <a href="#" className="nav-link">
-                Courses
-              </a>
-              <a href="#" className="nav-link">
-                About
-              </a>
-              <a href="#" className="nav-link">
-                Contact
-              </a>
-            </nav>
+            <div className="nav-links">
+              <span className="nav-link">Home</span>
+              <span className="nav-link">Courses</span>
+              <span className="nav-link">About</span>
+              <span className="nav-link">Contact</span>
+            </div>
             <button className="login-btn">Login</button>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">
+              <h4 className="hero-title">
                 Master New Skills with
                 <span className="highlight"> Expert Instructors</span>
-              </h1>
+              </h4>
               <p className="hero-description">
                 Join thousands of students learning from industry professionals. Access high-quality
                 courses, interactive lessons, and personalized feedback.
@@ -71,7 +61,7 @@ const OnlineLearningPage = () => {
               </div>
             </div>
             <div className="hero-image">
-              <img src="/img/main.jpg" alt="Students learning online" className="hero-img" />
+              Картинка
               <div className="floating-card">
                 <Clock className="card-icon" />
                 <div className="card-content">
@@ -83,13 +73,12 @@ const OnlineLearningPage = () => {
           </div>
         </div>
         <div className="hero-decoration"></div>
-      </section>
+      </div>
 
-      {/* Features Section */}
-      <section className="features">
+      <div className="features">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Why Choose EduMaster?</h2>
+            <h1 className="section-title">Why Choose EduMaster?</h1>
             <p className="section-description">
               Experience the future of online education with our innovative platform
             </p>
@@ -99,7 +88,7 @@ const OnlineLearningPage = () => {
               <div className="feature-icon">
                 <Play />
               </div>
-              <h3 className="feature-title">Interactive Video Lessons</h3>
+              <h1 className="feature-title">Interactive Video Lessons</h1>
               <p className="feature-description">
                 Engage with high-quality video content featuring real-world examples and hands-on
                 exercises.
@@ -110,7 +99,7 @@ const OnlineLearningPage = () => {
               <div className="feature-icon">
                 <Users />
               </div>
-              <h3 className="feature-title">Expert Mentorship</h3>
+              <h1 className="feature-title">Expert Mentorship</h1>
               <p className="feature-description">
                 Get personalized guidance from industry professionals and experienced instructors.
               </p>
@@ -120,7 +109,7 @@ const OnlineLearningPage = () => {
               <div className="feature-icon">
                 <Award />
               </div>
-              <h3 className="feature-title">Certified Programs</h3>
+              <h1 className="feature-title">Certified Programs</h1>
               <p className="feature-description">
                 Earn recognized certifications that boost your career and validate your skills.
               </p>
@@ -128,7 +117,7 @@ const OnlineLearningPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Popular Courses Section */}
       <section className="courses">
