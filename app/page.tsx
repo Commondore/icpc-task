@@ -13,46 +13,36 @@ import {
 const DesignToolsLanding = () => {
   return (
     <div className="app">
-      {/* Header */}
-      <header className="header">
+      <div className="header">
         <div className="container">
           <div className="nav">
             <div className="logo">
               <div className="logo-icon">DT</div>
               <span className="logo-text">designtools.</span>
             </div>
-            <nav className="nav-links">
-              <a href="#" className="nav-link">
-                Home
-              </a>
-              <a href="#" className="nav-link">
-                Categories
-              </a>
-              <a href="#" className="nav-link">
-                My Collections
-              </a>
-              <a href="#" className="nav-link">
-                Blog
-              </a>
-            </nav>
+            <div className="nav-links">
+              <div className="nav-link">Home</div>
+              <div className="nav-link">Categories</div>
+              <div className="nav-link">My Collections</div>
+              <div className="nav-link">Blog</div>
+            </div>
             <div className="auth-buttons">
               <button className="btn-login">Login</button>
               <button className="btn-signup">Sign Up</button>
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
-      {/* Hero Section */}
-      <section className="hero">
+      <div className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">
+              <h5 className="hero-title">
                 Awesome tools for
                 <br />
                 Designer & <span className="highlight">Developer</span>.
-              </h1>
+              </h5>
               <p className="hero-description">
                 DesignTool is a web collection of information on paid or
                 <br />
@@ -78,10 +68,9 @@ const DesignToolsLanding = () => {
             <div className="hero-image">Картинка</div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Popular Tools Section */}
-      <section className="popular-tools">
+      <div className="popular-tools">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Most Popular Tools</h2>
@@ -153,7 +142,7 @@ const DesignToolsLanding = () => {
 
           <button className="load-more-btn">Load more</button>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
