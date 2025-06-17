@@ -1,198 +1,232 @@
-import { Play, Search, Bell, ChevronLeft, ChevronRight } from "lucide-react";
+import React from "react";
+import { Pizza, Smartphone, Star, MapPin, Clock, Users } from "lucide-react";
 
-const StreamingPage = () => {
+const FoodDeliveryPage = () => {
   return (
-    <div className="streaming-page">
-      <div className="header">
+    <div className="food-delivery-page">
+      {/* Header */}
+      <header className="header">
         <div className="container">
-          <div className="nav-brand">
-            <div className="logo">
-              <Play className="logo-icon" />
-              <span className="logo-text">StreamVibe</span>
-            </div>
+          <div className="logo">
+            <Pizza className="logo-icon" />
+            <span className="logo-text">FoodieDelivery</span>
           </div>
-
-          <div className="nav-menu">
-            <a href="#" className="nav-link active">
-              Home
+          <nav className="nav">
+            <a href="#restaurants" className="nav-link">
+              Restaurants
             </a>
-            <a href="#" className="nav-link">
-              Movies & Shows
+            <a href="#recipes" className="nav-link">
+              Recipes
             </a>
-            <a href="#" className="nav-link">
-              Support
+            <a href="#about" className="nav-link">
+              About
             </a>
-            <a href="#" className="nav-link">
-              Subscriptions
+            <a href="#contact" className="nav-link">
+              Contact
             </a>
-          </div>
-
-          <div className="nav-actions">
-            <button className="icon-btn">
-              <Search size={20} />
-            </button>
-            <button className="icon-btn">
-              <Bell size={20} />
-            </button>
+          </nav>
+          <div className="auth-buttons">
+            <button className="login-btn">Login</button>
+            <button className="signup-btn">Sign Up</button>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div className="hero">
-        <div className="hero-background">
-          <div className="movie-grid">
-            <div className="movie-card">
-              <img src="/img/film-1.jpeg" alt="Movie 1" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-2.jpeg" alt="Movie 2" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-3.jpeg" alt="Movie 3" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-4.jpeg" alt="Movie 4" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-5.jpeg" alt="Movie 5" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-6.jpeg" alt="Movie 6" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-7.jpeg" alt="Movie 7" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-8.jpeg" alt="Movie 8" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-9.jpeg" alt="Movie 9" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-10.jpeg" alt="Movie 10" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-11.jpeg" alt="Movie 11" />
-            </div>
-            <div className="movie-card">
-              <img src="/img/film-12.jpeg" alt="Movie 12" />
-            </div>
-          </div>
-          <div className="hero-overlay"></div>
-        </div>
-
-        <div className="hero-content">
-          <div className="play-button-large">
-            <Play size={60} />
-          </div>
-          <h1 className="hero-title">The Best Streaming Experience</h1>
-          <p className="hero-description">
-            StreamVibe is the best streaming experience for watching your favorite movies and shows
-            on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content,
-            including the latest blockbusters, classic movies, popular TV shows, and more. You can
-            also create your own watchlists, so you can easily find the content you want to watch.
-          </p>
-          <button className="cta-button">
-            <Play size={20} />
-            Start Watching Now
-          </button>
-        </div>
-      </div>
-
-      <div className="categories">
+      {/* Hero Section */}
+      <section className="hero">
         <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Explore our wide variety of categories</h2>
-            <p className="section-description">
-              Whether you are looking for a comedy to make you laugh, a drama to make you think, or
-              a documentary to learn something new
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">
+                Your Favorite Food
+                <br />
+                Delivery Partner
+              </h1>
+              <p className="hero-description">
+                The food at your doorstep. Why starve when you have us. Your hunger partner.
+                Straight out of the oven to your doorstep.
+              </p>
+              <div className="hero-actions">
+                <div className="location-input">
+                  <MapPin className="input-icon" />
+                  <input
+                    type="text"
+                    placeholder="Enter your delivery location"
+                    className="location-field"
+                  />
+                </div>
+                <button className="order-btn">Order Now</button>
+              </div>
+              <div className="app-downloads">
+                <div className="download-btn">
+                  <Smartphone className="download-icon" />
+                  <div className="download-text">
+                    <span className="download-label">Download on the</span>
+                    <span className="download-store">App Store</span>
+                  </div>
+                </div>
+                <div className="download-btn">
+                  <Smartphone className="download-icon" />
+                  <div className="download-text">
+                    <span className="download-label">Get it on</span>
+                    <span className="download-store">Google Play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="Delivery person"
+                className="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="container">
+          <div className="features-header">
+            <h2 className="features-title">
+              More Than <span className="highlight">10,000</span> Dishes
+              <br />
+              To Order!
+            </h2>
+            <p className="features-subtitle">
+              Welcome to The Biggest Network of Food Ordering & Delivery
             </p>
-            <div className="section-controls">
-              <button className="control-btn">
-                <ChevronLeft size={20} />
-              </button>
-              <div className="pagination-dots">
-                <span className="dot active"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
+          </div>
+
+          <div className="categories">
+            <div className="category-item">
+              <div className="category-icon">
+                <img src="/img/pizza.jpg" alt="Pizza" />
               </div>
-              <button className="control-btn">
-                <ChevronRight size={20} />
-              </button>
+              <h3 className="category-name">Pizza</h3>
+            </div>
+            <div className="category-item">
+              <div className="category-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Burger"
+                />
+              </div>
+              <h3 className="category-name">Burger</h3>
+            </div>
+            <div className="category-item">
+              <div className="category-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Sushi"
+                />
+              </div>
+              <h3 className="category-name">Sushi</h3>
+            </div>
+            <div className="category-item">
+              <div className="category-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Pasta"
+                />
+              </div>
+              <h3 className="category-name">Pasta</h3>
+            </div>
+            <div className="category-item">
+              <div className="category-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Salad"
+                />
+              </div>
+              <h3 className="category-name">Salad</h3>
+            </div>
+            <div className="category-item">
+              <div className="category-icon">
+                <img
+                  src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Desserts"
+                />
+              </div>
+              <h3 className="category-name">Desserts</h3>
             </div>
           </div>
 
-          <div className="categories-grid">
-            <div className="category-card">
-              <div className="category-images">
-                <img src="/img/film-1.jpeg" alt="Action 1" />
-                <img src="/img/film-2.jpeg" alt="Action 2" />
-                <img src="/img/film-3.jpeg" alt="Action 3" />
-                <img src="/img/film-4.jpeg" alt="Action 4" />
-              </div>
-              <div className="category-info">
-                <h1 className="category-title">Action</h1>
-                <ChevronRight className="category-arrow" />
+          <div className="delivery-info">
+            <div className="delivery-text">
+              <p className="delivery-description">
+                Find <span className="text-orange">deals</span>,{" "}
+                <span className="text-green">free delivery</span>, and more from our restaurant
+                partners.
+              </p>
+            </div>
+            <div className="delivery-illustration">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                alt="Delivery scooter"
+                className="delivery-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="stats">
+        <div className="container">
+          <div className="stats-content">
+            <div className="testimonial">
+              <p className="testimonial-text">
+                Amazing service! The food arrived hot and fresh, exactly as ordered. The delivery
+                was incredibly fast and the app is so easy to use. Definitely my go-to food delivery
+                service!
+              </p>
+              <div className="testimonial-author">
+                <div className="author-avatar">
+                  <img src="/img/avatar.jpg" alt="Customer" />
+                </div>
+                <div className="author-info">
+                  <div className="author-name">Sarah Johnson</div>
+                  <div className="author-rating">
+                    <Star className="star-icon" />
+                    <Star className="star-icon" />
+                    <Star className="star-icon" />
+                    <Star className="star-icon" />
+                    <Star className="star-icon" />
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="category-card">
-              <div className="category-images">
-                <img src="/img/film-5.jpeg" alt="Adventure 1" />
-                <img src="/img/film-6.jpeg" alt="Adventure 2" />
-                <img src="/img/film-7.jpeg" alt="Adventure 3" />
-                <img src="/img/film-8.jpeg" alt="Adventure 4" />
+            <div className="stats-grid">
+              <div className="stat-item">
+                <div className="stat-icon">
+                  <Users className="icon" />
+                </div>
+                <div className="stat-number">50K+</div>
+                <div className="stat-label">Happy Customers</div>
               </div>
-              <div className="category-info">
-                <h1 className="category-title">Adventure</h1>
-                <ChevronRight className="category-arrow" />
+              <div className="stat-item">
+                <div className="stat-icon">
+                  <Clock className="icon" />
+                </div>
+                <div className="stat-number">15 min</div>
+                <div className="stat-label">Average Delivery</div>
               </div>
-            </div>
-
-            <div className="category-card">
-              <div className="category-images">
-                <img src="/img/film-9.jpeg" alt="Comedy 1" />
-                <img src="/img/film-10.jpeg" alt="Comedy 2" />
-                <img src="/img/film-11.jpeg" alt="Comedy 3" />
-                <img src="/img/film-12.jpeg" alt="Comedy 4" />
-              </div>
-              <div className="category-info">
-                <h1 className="category-title">Comedy</h1>
-                <ChevronRight className="category-arrow" />
-              </div>
-            </div>
-
-            <div className="category-card">
-              <div className="category-images">
-                <img src="/img/film-13.jpeg" alt="Drama 1" />
-                <img src="/img/film-14.jpeg" alt="Drama 2" />
-                <img src="/img/film-15.jpeg" alt="Drama 3" />
-                <img src="/img/film-16.jpeg" alt="Drama 4" />
-              </div>
-              <div className="category-info">
-                <h1 className="category-title">Drama</h1>
-                <ChevronRight className="category-arrow" />
-              </div>
-            </div>
-
-            <div className="category-card">
-              <div className="category-images">
-                <img src="/img/film-17.jpeg" alt="Horror 1" />
-                <img src="/img/film-18.jpeg" alt="Horror 2" />
-                <img src="/img/film-19.jpeg" alt="Horror 3" />
-                <img src="/img/film-20.jpeg" alt="Horror 4" />
-              </div>
-              <div className="category-info">
-                <h1 className="category-title">Horror</h1>
-                <ChevronRight className="category-arrow" />
+              <div className="stat-item">
+                <div className="stat-icon">
+                  <Pizza className="icon" />
+                </div>
+                <div className="stat-number">500+</div>
+                <div className="stat-label">Restaurant Partners</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
 
-export default StreamingPage;
+export default FoodDeliveryPage;
