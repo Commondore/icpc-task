@@ -1,150 +1,199 @@
-import {
-  Search,
-  Heart,
-  ExternalLink,
-  Code,
-  Palette,
-  Facebook,
-  Instagram,
-  Twitter,
-  Figma,
-} from "lucide-react";
+import { ShoppingCart, Heart, Search, Leaf, Star, Shield, Truck } from "lucide-react";
 
-const DesignToolsLanding = () => {
+const SeedraPage = () => {
   return (
     <div className="app">
-      <div className="header">
+      {/* Header */}
+      <header className="header">
         <div className="container">
-          <div className="nav">
+          <div className="header-content">
             <div className="logo">
-              <div className="logo-icon">DT</div>
-              <span className="logo-text">designtools.</span>
+              <Leaf className="logo-icon" />
+              <span>SEEDRA</span>
             </div>
-            <div className="nav-links">
-              <div className="nav-link">Home</div>
-              <div className="nav-link">Categories</div>
-              <div className="nav-link">My Collections</div>
-              <div className="nav-link">Blog</div>
-            </div>
-            <div className="auth-buttons">
-              <button className="btn-login">Login</button>
-              <button className="btn-signup">Sign Up</button>
+            <nav className="nav">
+              <a href="#" className="nav-link">
+                ВСЕ ТОВАРЫ
+              </a>
+              <a href="#" className="nav-link">
+                О SEEDRA
+              </a>
+              <a href="#" className="nav-link">
+                БЛОГ
+              </a>
+              <a href="#" className="nav-link">
+                КОНТАКТЫ
+              </a>
+            </nav>
+            <div className="header-actions">
+              <button className="icon-btn">
+                <Search size={20} />
+              </button>
+              <button className="icon-btn">
+                <Heart size={20} />
+              </button>
+              <button className="icon-btn">
+                <ShoppingCart size={20} />
+              </button>
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div className="hero">
+      {/* Hero Section */}
+      <section className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h5 className="hero-title">
-                Awesome tools for
-                <br />
-                Designer & <span className="highlight">Developer</span>.
-              </h5>
-              <p className="hero-description">
-                DesignTool is a web collection of information on paid or
-                <br />
-                free Design and Development tools
+              <h1>SEEDRA Семена базилика для выращивания дома и в саду</h1>
+              <p>
+                Убедитесь в нашем качестве - самые свежие партии этого сезона. Без ГМО, семейная
+                реликвия - наши семена протестированы и имеют лучшие показатели всхожести. Ваш
+                легкий опыт выращивания - наша гарантия.
               </p>
-              <div className="search-bar">
-                <div className="search-input-wrapper">
-                  <Search className="search-icon" size={20} />
-                  <input
-                    type="text"
-                    placeholder="find more than 430+ tools..."
-                    className="search-input"
-                  />
-                </div>
-                <button className="search-button">Search</button>
+
+              <div className="price-section">
+                <div className="price-badge">🔥</div>
+                <span className="current-price">₽899</span>
+                <span className="old-price">₽1,199</span>
               </div>
-              <div className="social-links">
-                <Facebook size={20} />
-                <Instagram size={20} />
-                <Twitter size={20} />
+
+              <div className="hero-actions">
+                <button className="btn-primary">В корзину</button>
+                <button className="btn-secondary">Подробнее</button>
               </div>
             </div>
-            <div className="hero-image">Картинка</div>
+
+            <div className="hero-image">
+              <img src="/img/main.jpg" alt="Семена базилика SEEDRA" className="product-image" />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="popular-tools">
+      {/* Features Section */}
+      <section className="features">
         <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Most Popular Tools</h2>
-            <p className="section-description">
-              Tools for the best Designers and Developers
-              <br />
-              most popularly used in the world
-            </p>
+          <div className="features-header">
+            <h2>Мы продаем семена</h2>
+            <p>которые всегда прорастают, и садовые принадлежности, которые никогда не ломаются</p>
           </div>
 
-          <div className="tools-grid">
-            <div className="tool-card">
-              <div className="tool-icon figma-icon">
-                <Figma size={32} />
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Shield size={40} />
               </div>
-              <div className="tool-info">
-                <h3 className="tool-name">Figma</h3>
-                <span className="tool-price free">Free</span>
-                <p className="tool-description">
-                  Collaborative interface design tool with real-time editing and prototyping
-                  capabilities.
-                </p>
-                <div className="tool-actions">
-                  <Heart className="action-icon" size={16} />
-                  <ExternalLink className="action-icon" size={16} />
-                  <button className="visit-btn">Visit</button>
-                </div>
-              </div>
+              <h3>Гарантия качества</h3>
+              <p>Все наши семена проходят строгий контроль качества и имеют высокую всхожесть</p>
             </div>
 
-            <div className="tool-card">
-              <div className="tool-icon sketch-icon">
-                <Palette size={32} />
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Truck size={40} />
               </div>
-              <div className="tool-info">
-                <h3 className="tool-name">Sketch</h3>
-                <span className="tool-price paid">Trial & Paid</span>
-                <p className="tool-description">
-                  Professional vector graphics app for designing user interfaces and digital
-                  products.
-                </p>
-                <div className="tool-actions">
-                  <Heart className="action-icon" size={16} />
-                  <ExternalLink className="action-icon" size={16} />
-                  <button className="visit-btn">Visit</button>
-                </div>
-              </div>
+              <h3>Быстрая доставка</h3>
+              <p>Доставляем по всей России в течение 2-5 рабочих дней</p>
             </div>
 
-            <div className="tool-card">
-              <div className="tool-icon vscode-icon">
-                <Code size={32} />
+            <div className="feature-card">
+              <div className="feature-icon">
+                <Leaf size={40} />
               </div>
-              <div className="tool-info">
-                <h3 className="tool-name">Visual Studio Code</h3>
-                <span className="tool-price free">Free</span>
-                <p className="tool-description">
-                  Lightweight but powerful source code editor with built-in Git support and
-                  extensions.
-                </p>
-                <div className="tool-actions">
-                  <Heart className="action-icon" size={16} />
-                  <ExternalLink className="action-icon" size={16} />
-                  <button className="visit-btn">Visit</button>
-                </div>
-              </div>
+              <h3>Экологично</h3>
+              <p>Только органические семена без ГМО и химических обработок</p>
             </div>
           </div>
-
-          <button className="load-more-btn">Load more</button>
         </div>
-      </div>
+      </section>
+
+      {/* Products Preview */}
+      <section className="products-preview">
+        <div className="container">
+          <h2>Популярные товары</h2>
+          <div className="products-grid">
+            <div className="product-card">
+              <div className="product-image-container">
+                <img src="/img/tomato.jpg" alt="Семена томатов" className="product-card-image" />
+                <button className="favorite-btn">
+                  <Heart size={20} />
+                </button>
+              </div>
+              <div className="product-info">
+                <h3>Семена томатов</h3>
+                <div className="rating">
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <span>(4.9)</span>
+                </div>
+                <div className="product-footer">
+                  <div className="product-price">₽659</div>
+                  <button className="add-to-cart-btn">
+                    <ShoppingCart size={18} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="product-image-container">
+                <img src="/img/cucumber.jpg" alt="Семена огурцов" className="product-card-image" />
+                <button className="favorite-btn">
+                  <Heart size={20} />
+                </button>
+              </div>
+              <div className="product-info">
+                <h3>Семена огурцов</h3>
+                <div className="rating">
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} />
+                  <span>(4.7)</span>
+                </div>
+                <div className="product-footer">
+                  <div className="product-price">₽549</div>
+                  <button className="add-to-cart-btn">
+                    <ShoppingCart size={18} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="product-image-container">
+                <img src="/img/carrot.jpeg" alt="Семена моркови" className="product-card-image" />
+                <button className="favorite-btn">
+                  <Heart size={20} />
+                </button>
+              </div>
+              <div className="product-info">
+                <h3>Семена моркови</h3>
+                <div className="rating">
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <span>(5.0)</span>
+                </div>
+                <div className="product-footer">
+                  <div className="product-price">₽449</div>
+                  <button className="add-to-cart-btn">
+                    <ShoppingCart size={18} />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default DesignToolsLanding;
+export default SeedraPage;
