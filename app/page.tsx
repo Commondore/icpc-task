@@ -1,29 +1,44 @@
-import React from "react";
-import { Pizza, Smartphone, Star, MapPin, Clock, Users } from "lucide-react";
+import {
+  Search,
+  Heart,
+  ExternalLink,
+  Code,
+  Palette,
+  Facebook,
+  Instagram,
+  Twitter,
+  Figma,
+} from "lucide-react";
 
-const FoodDeliveryPage = () => {
+const DesignToolsLanding = () => {
   return (
-    <div className="food-delivery-page">
+    <div className="app">
       {/* Header */}
       <header className="header">
         <div className="container">
-          <div className="logo">
-            <Pizza className="logo-icon" />
-            <span className="logo-text">FoodieDelivery</span>
-          </div>
-          <nav className="nav">
-            <div className="nav-link">
-              {" "}
-              {/* Заменим a на div */}
-              Restaurants
+          <div className="nav">
+            <div className="logo">
+              <div className="logo-icon">DT</div>
+              <span className="logo-text">designtools.</span>
             </div>
-            <div className="nav-link">Recipes</div>
-            <div className="nav-link">About</div>
-            <div className="nav-link">Contact</div>
-          </nav>
-          <div className="auth-buttons">
-            <button className="login-btn">Login</button>
-            <button className="signup-btn">Sign Up</button>
+            <nav className="nav-links">
+              <a href="#" className="nav-link">
+                Home
+              </a>
+              <a href="#" className="nav-link">
+                Categories
+              </a>
+              <a href="#" className="nav-link">
+                My Collections
+              </a>
+              <a href="#" className="nav-link">
+                Blog
+              </a>
+            </nav>
+            <div className="auth-buttons">
+              <button className="btn-login">Login</button>
+              <button className="btn-signup">Sign Up</button>
+            </div>
           </div>
         </div>
       </header>
@@ -33,175 +48,114 @@ const FoodDeliveryPage = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h3 className="hero-title">
-                {" "}
-                {/* Сломаем иерархию заголовков h1->h3 */}
-                Your Favorite Food
+              <h1 className="hero-title">
+                Awesome tools for
                 <br />
-                Delivery Partner
-              </h3>
+                Designer & <span className="highlight">Developer</span>.
+              </h1>
               <p className="hero-description">
-                The food at your doorstep. Why starve when you have us. Your hunger partner.
-                Straight out of the oven to your doorstep.
+                DesignTool is a web collection of information on paid or
+                <br />
+                free Design and Development tools
               </p>
-              <div className="hero-actions">
-                <div className="location-input">
-                  <MapPin className="input-icon" />
+              <div className="search-bar">
+                <div className="search-input-wrapper">
+                  <Search className="search-icon" size={20} />
                   <input
                     type="text"
-                    placeholder="Enter your delivery location"
-                    className="location-field"
+                    placeholder="find more than 430+ tools..."
+                    className="search-input"
                   />
                 </div>
-                <button className="order-btn">Order Now</button>
+                <button className="search-button">Search</button>
               </div>
-              <div className="app-downloads">
-                <div className="download-btn">
-                  <Smartphone className="download-icon" />
-                  <div className="download-text">
-                    <span className="download-label">Download on the</span>
-                    <span className="download-store">App Store</span>
-                  </div>
-                </div>
-                <div className="download-btn">
-                  <Smartphone className="download-icon" />
-                  <div className="download-text">
-                    <span className="download-label">Get it on</span>
-                    <span className="download-store">Google Play</span>
-                  </div>
-                </div>
+              <div className="social-links">
+                <Facebook size={20} />
+                <Instagram size={20} />
+                <Twitter size={20} />
               </div>
             </div>
-            <div className="hero-image">Картинка с едой</div>
+            <div className="hero-image">Картинка</div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="features">
+      {/* Popular Tools Section */}
+      <section className="popular-tools">
         <div className="container">
-          <div className="features-header">
-            <h2 className="features-title">
-              More Than <span className="highlight">10,000</span> Dishes
+          <div className="section-header">
+            <h2 className="section-title">Most Popular Tools</h2>
+            <p className="section-description">
+              Tools for the best Designers and Developers
               <br />
-              To Order!
-            </h2>
-            <p className="features-subtitle">
-              Welcome to The Biggest Network of Food Ordering & Delivery
+              most popularly used in the world
             </p>
           </div>
 
-          <div className="categories">
-            {" "}
-            {/* Уберем семантику списка */}
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/pizza.jpg" alt="Pizza" />
+          <div className="tools-grid">
+            <div className="tool-card">
+              <div className="tool-icon figma-icon">
+                <Figma size={32} />
               </div>
-              <h3 className="category-name">Pizza</h3>
-            </div>
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/burger.avif" alt="Burger" />
-              </div>
-              <h3 className="category-name">Burger</h3>
-            </div>
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/sushi.avif" alt="Sushi" />
-              </div>
-              <h3 className="category-name">Sushi</h3>
-            </div>
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/pasta.avif" alt="Pasta" />
-              </div>
-              <h3 className="category-name">Pasta</h3>
-            </div>
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/salad.avif" alt="Salad" />
-              </div>
-              <h3 className="category-name">Salad</h3>
-            </div>
-            <div className="category-item">
-              <div className="category-icon">
-                <img src="/img/dessert.avif" alt="Desserts" />
-              </div>
-              <h3 className="category-name">Desserts</h3>
-            </div>
-          </div>
-
-          <div className="delivery-info">
-            <div className="delivery-text">
-              <p className="delivery-description">
-                Find <span className="text-orange">deals</span>,{" "}
-                <span className="text-green">free delivery</span>, and more from our restaurant
-                partners.
-              </p>
-            </div>
-            <div className="delivery-illustration">
-              <img src="/img/man.avif" alt="Delivery scooter" className="delivery-img" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="stats">
-        <div className="container">
-          <div className="stats-content">
-            <div className="testimonial">
-              <p className="testimonial-text">
-                Amazing service! The food arrived hot and fresh, exactly as ordered. The delivery
-                was incredibly fast and the app is so easy to use. Definitely my go-to food delivery
-                service!
-              </p>
-              <div className="testimonial-author">
-                <div className="author-avatar">
-                  <img src="/img/avatar.jpg" alt="Customer" />
-                </div>
-                <div className="author-info">
-                  <div className="author-name">Sarah Johnson</div>
-                  <div className="author-rating">
-                    <Star className="star-icon" />
-                    <Star className="star-icon" />
-                    <Star className="star-icon" />
-                    <Star className="star-icon" />
-                    <Star className="star-icon" />
-                  </div>
+              <div className="tool-info">
+                <h3 className="tool-name">Figma</h3>
+                <span className="tool-price free">Free</span>
+                <p className="tool-description">
+                  Collaborative interface design tool with real-time editing and prototyping
+                  capabilities.
+                </p>
+                <div className="tool-actions">
+                  <Heart className="action-icon" size={16} />
+                  <ExternalLink className="action-icon" size={16} />
+                  <button className="visit-btn">Visit</button>
                 </div>
               </div>
             </div>
 
-            <div className="stats-grid">
-              <div className="stat-item">
-                <div className="stat-icon">
-                  <Users className="icon" />
-                </div>
-                <div className="stat-number">50K+</div>
-                <div className="stat-label">Happy Customers</div>
+            <div className="tool-card">
+              <div className="tool-icon sketch-icon">
+                <Palette size={32} />
               </div>
-              <div className="stat-item">
-                <div className="stat-icon">
-                  <Clock className="icon" />
+              <div className="tool-info">
+                <h3 className="tool-name">Sketch</h3>
+                <span className="tool-price paid">Trial & Paid</span>
+                <p className="tool-description">
+                  Professional vector graphics app for designing user interfaces and digital
+                  products.
+                </p>
+                <div className="tool-actions">
+                  <Heart className="action-icon" size={16} />
+                  <ExternalLink className="action-icon" size={16} />
+                  <button className="visit-btn">Visit</button>
                 </div>
-                <div className="stat-number">15 min</div>
-                <div className="stat-label">Average Delivery</div>
               </div>
-              <div className="stat-item">
-                <div className="stat-icon">
-                  <Pizza className="icon" />
+            </div>
+
+            <div className="tool-card">
+              <div className="tool-icon vscode-icon">
+                <Code size={32} />
+              </div>
+              <div className="tool-info">
+                <h3 className="tool-name">Visual Studio Code</h3>
+                <span className="tool-price free">Free</span>
+                <p className="tool-description">
+                  Lightweight but powerful source code editor with built-in Git support and
+                  extensions.
+                </p>
+                <div className="tool-actions">
+                  <Heart className="action-icon" size={16} />
+                  <ExternalLink className="action-icon" size={16} />
+                  <button className="visit-btn">Visit</button>
                 </div>
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Restaurant Partners</div>
               </div>
             </div>
           </div>
+
+          <button className="load-more-btn">Load more</button>
         </div>
       </section>
     </div>
   );
 };
 
-export default FoodDeliveryPage;
+export default DesignToolsLanding;
