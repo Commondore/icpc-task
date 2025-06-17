@@ -72,13 +72,7 @@ const FoodDeliveryPage = () => {
                 </div>
               </div>
             </div>
-            <div className="hero-image">
-              <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Delivery person"
-                className="hero-img"
-              />
-            </div>
+            <div className="hero-image">Картинка с едой</div>
           </div>
         </div>
       </section>
@@ -108,46 +102,31 @@ const FoodDeliveryPage = () => {
             </div>
             <div className="category-item">
               <div className="category-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Burger"
-                />
+                <img src="/img/burger.avif" alt="Burger" />
               </div>
               <h3 className="category-name">Burger</h3>
             </div>
             <div className="category-item">
               <div className="category-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Sushi"
-                />
+                <img src="/img/sushi.avif" alt="Sushi" />
               </div>
               <h3 className="category-name">Sushi</h3>
             </div>
             <div className="category-item">
               <div className="category-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Pasta"
-                />
+                <img src="/img/pasta.avif" alt="Pasta" />
               </div>
               <h3 className="category-name">Pasta</h3>
             </div>
             <div className="category-item">
               <div className="category-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Salad"
-                />
+                <img src="/img/salad.avif" alt="Salad" />
               </div>
               <h3 className="category-name">Salad</h3>
             </div>
             <div className="category-item">
               <div className="category-icon">
-                <img
-                  src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Desserts"
-                />
+                <img src="/img/dessert.avif" alt="Desserts" />
               </div>
               <h3 className="category-name">Desserts</h3>
             </div>
@@ -162,11 +141,7 @@ const FoodDeliveryPage = () => {
               </p>
             </div>
             <div className="delivery-illustration">
-              <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                alt="Delivery scooter"
-                className="delivery-img"
-              />
+              <img src="/img/man.avif" alt="Delivery scooter" className="delivery-img" />
             </div>
           </div>
         </div>
